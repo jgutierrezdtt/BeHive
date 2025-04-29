@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/BeHive/', // Base path for GitHub Pages deployment
+  build: {
+    outDir: 'docs', // Changing output directory from 'dist' to 'docs'
+    emptyOutDir: true
+  }
 })

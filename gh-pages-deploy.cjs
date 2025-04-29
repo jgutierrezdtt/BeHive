@@ -3,12 +3,12 @@
 
 const fs = require('fs');
 const path = require('path');
-const distPath = path.resolve(__dirname, 'dist');
+const docsPath = path.resolve(__dirname, 'docs');
 
 // Copy index.html to 404.html to handle SPA routing
 fs.copyFileSync(
-  path.join(distPath, 'index.html'),
-  path.join(distPath, '404.html')
+  path.join(docsPath, 'index.html'),
+  path.join(docsPath, '404.html')
 );
 
 console.log('Successfully prepared for GitHub Pages deployment!');
