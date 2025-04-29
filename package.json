@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node gh-pages-deploy.cjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "type-check": "tsc -b"
