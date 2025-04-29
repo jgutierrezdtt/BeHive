@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { 
   ThemeProvider, 
   createTheme, 
@@ -38,7 +38,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter basename="/BeHive">
+      <HashRouter>
         <Box
           sx={{
             display: 'flex',
@@ -57,7 +57,7 @@ function App() {
           </Container>
           <Footer />
         </Box>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   )
 }
